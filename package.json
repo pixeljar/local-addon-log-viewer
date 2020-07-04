@@ -1,0 +1,56 @@
+{
+	"name": "local-addon-log-viewer",
+	"productName": "Log Viewer",
+	"version": "1.0.0",
+	"description": "View PHP, Nginx, MySQL, and Apache logs in Local",
+	"renderer": "lib/renderer.js",
+	"main": "lib/main.js",
+	"icon": "icon.svg",
+	"bgColor": "#f5fdf7",
+	"author": "Pixel Jar <info@pixeljar.com>",
+	"license": "MIT",
+	"slug": "log-viewer",
+	"scripts": {
+		"build": "tsc",
+		"watch": "yarn run build --watch",
+		"prepare": "npm run build"
+	},
+	"devDependencies": {
+		"@getflywheel/local": "^5.6.1",
+		"@getflywheel/local-components": "^14.0.0",
+		"@types/electron": "^1.6.10",
+		"@types/fs-extra": "^8.0.1",
+		"@types/jsdom": "^12.2.4",
+		"typescript": "^3.7.5",
+		"@babel/cli": "^7.2.0",
+		"@babel/core": "^7.2.0",
+		"@babel/plugin-proposal-class-properties": "^7.2.0",
+		"@babel/preset-env": "^7.2.0",
+		"@babel/preset-react": "^7.0.0",
+		"@getflywheel/eslint-config-local": "1.0.4",
+		"babel-eslint": "^10.0.1",
+		"eslint": "^5.0.0",
+		"eslint-plugin-import": "^2.14.0",
+		"eslint-plugin-react": "^7.11.1"
+	},
+	"dependencies": {
+		"@getflywheel/local-components": "^12.1.0",
+		"fs-extra": "^8.1.0",
+		"jsdom": "^16.0.1",
+		"react": "^16.12.0",
+		"untildify": "^4.0.0",
+		"uuid": "^3.4.0",
+		"lodash.throttle": "^4.1.1"
+	},
+	"bundledDependencies": [
+		"@getflywheel/local-components",
+		"fs-extra",
+		"jsdom",
+		"untildify",
+		"uuid",
+		"lodash.throttle"
+	],
+	"engines": {
+		"local-by-flywheel": "^5.2.0"
+	}
+}

@@ -1,0 +1,7 @@
+.vscode
+.DS_Store
+*.tgz
+
+### Node ###
+*.log
+node_modules
